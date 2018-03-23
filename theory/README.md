@@ -55,12 +55,18 @@ both `antelope` and `antelopes`.)
 
       ab*c+d?[ef]
 
+## ANSWER
+![Answer](img/SprintFSM1_cropped.png)
+
   Remember the ε transition can be used to move between states without
   consuming input. 
 
 * A lion can be sleeping, eating, hunting, or preening. Draw a state
   machine diagram for the lion and label the transition events that
   cause state transitions.
+
+  ## ANSWER
+  ![FSM Lion](img/SprintFSM_Lion_cropped.png)
 
 * The VT-100 terminal (console) outputs text to the screen as it
   receives it over the wire. One exception is that when it receives an
@@ -69,9 +75,21 @@ both `antelope` and `antelopes`.)
 
       ESC[12;45f
 
+## ANSWER
+
+```
+/\e\d+;\d+f/g
+```
+
   moves the cursor to line 12, column 45.
 
       ESC[1m
+
+## ANSWER
+
+```
+/\e1m/g
+```
 
   changes the font to bold.
 
@@ -83,6 +101,9 @@ both `antelope` and `antelopes`.)
   * Draw a state machine diagram for a VT-100 that can consume regular
     character sequences as well as the two above ESC sequences.
 
+## ANSWER
+
+![FSM VT-100](img/SprintFSM_VT_cropped.png)
 > If you're curious, [here are all the VT-100 escape
 > sequences](http://ascii-table.com/ansi-escape-sequences-vt-100.php).
 > More common these days is a superset of VT-100 called [ANSI escape
