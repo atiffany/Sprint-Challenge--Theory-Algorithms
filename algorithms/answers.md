@@ -42,5 +42,6 @@ This works since I have a lot of eggs.
 Even if I only have two eggs, going to the middle floor seems like a pretty good way to start, because it tells you what half you will need to iterate over, so you can save half your workload.
 
 ## Exercise III
-a.
-b.
+a. A quicksort is always going to iterate over every element in the array. If the array is already sorted, and if we choose the first item as the pivot we get really poor performance. We have to recurse for each item in the sorted array. In an unsorted array there is a difference based on the pivot that you choose in order to make it more efficient.
+
+b. If you randomly choose a pivot, your run time may be altered from one run to the next. Choosing the first item makes your quicksort inefficient.
